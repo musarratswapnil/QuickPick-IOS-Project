@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D20CDA42D27A81B00415B34 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4D20CDA32D27A81B00415B34 /* GoogleService-Info.plist */; };
+		4D20CDA62D27E12000415B34 /* PollChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D20CDA52D27E12000415B34 /* PollChartView.swift */; };
 		4DBC1E4E2D22DE1C00CF2849 /* QuickPickApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBC1E4D2D22DE1C00CF2849 /* QuickPickApp.swift */; };
 		4DBC1E502D22DE1C00CF2849 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBC1E4F2D22DE1C00CF2849 /* ContentView.swift */; };
 		4DBC1E522D22DE1E00CF2849 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DBC1E512D22DE1E00CF2849 /* Assets.xcassets */; };
@@ -14,7 +16,6 @@
 		4DBC1E5F2D22DE1E00CF2849 /* QuickPickTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBC1E5E2D22DE1E00CF2849 /* QuickPickTests.swift */; };
 		4DBC1E692D22DE1E00CF2849 /* QuickPickUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBC1E682D22DE1E00CF2849 /* QuickPickUITests.swift */; };
 		4DBC1E6B2D22DE1E00CF2849 /* QuickPickUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBC1E6A2D22DE1E00CF2849 /* QuickPickUITestsLaunchTests.swift */; };
-		4DBC1E7E2D24251900CF2849 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4DBC1E7D2D24251900CF2849 /* GoogleService-Info.plist */; };
 		4DBC1E802D2427DF00CF2849 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 4DBC1E7F2D2427DF00CF2849 /* FirebaseAnalytics */; };
 		4DBC1E822D2427DF00CF2849 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = 4DBC1E812D2427DF00CF2849 /* FirebaseAnalyticsOnDeviceConversion */; };
 		4DBC1E842D2427DF00CF2849 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = 4DBC1E832D2427DF00CF2849 /* FirebaseAnalyticsWithoutAdIdSupport */; };
@@ -75,6 +76,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4D20CDA32D27A81B00415B34 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4D20CDA52D27E12000415B34 /* PollChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollChartView.swift; sourceTree = "<group>"; };
 		4DBC1E4A2D22DE1C00CF2849 /* QuickPick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickPick.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DBC1E4D2D22DE1C00CF2849 /* QuickPickApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickPickApp.swift; sourceTree = "<group>"; };
 		4DBC1E4F2D22DE1C00CF2849 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -85,7 +88,6 @@
 		4DBC1E642D22DE1E00CF2849 /* QuickPickUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuickPickUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DBC1E682D22DE1E00CF2849 /* QuickPickUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickPickUITests.swift; sourceTree = "<group>"; };
 		4DBC1E6A2D22DE1E00CF2849 /* QuickPickUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickPickUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		4DBC1E7D2D24251900CF2849 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4DBC1EB02D266EE300CF2849 /* Option.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Option.swift; sourceTree = "<group>"; };
 		4DBC1EB22D266F5000CF2849 /* Poll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Poll.swift; sourceTree = "<group>"; };
 		4DBC1EB52D26744D00CF2849 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -171,8 +173,8 @@
 				4DBC1EAF2D266EBE00CF2849 /* Models */,
 				4DBC1E4D2D22DE1C00CF2849 /* QuickPickApp.swift */,
 				4DBC1E4F2D22DE1C00CF2849 /* ContentView.swift */,
+				4D20CDA32D27A81B00415B34 /* GoogleService-Info.plist */,
 				4DBC1E512D22DE1E00CF2849 /* Assets.xcassets */,
-				4DBC1E7D2D24251900CF2849 /* GoogleService-Info.plist */,
 				4DBC1E532D22DE1E00CF2849 /* Preview Content */,
 			);
 			path = QuickPick;
@@ -216,6 +218,7 @@
 			isa = PBXGroup;
 			children = (
 				4DBC1EB52D26744D00CF2849 /* HomeView.swift */,
+				4D20CDA52D27E12000415B34 /* PollChartView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -372,7 +375,7 @@
 			files = (
 				4DBC1E552D22DE1E00CF2849 /* Preview Assets.xcassets in Resources */,
 				4DBC1E522D22DE1E00CF2849 /* Assets.xcassets in Resources */,
-				4DBC1E7E2D24251900CF2849 /* GoogleService-Info.plist in Resources */,
+				4D20CDA42D27A81B00415B34 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,6 +404,7 @@
 				4DBC1E502D22DE1C00CF2849 /* ContentView.swift in Sources */,
 				4DBC1EB12D266EE300CF2849 /* Option.swift in Sources */,
 				4DBC1EB92D2676D900CF2849 /* HomeVM.swift in Sources */,
+				4D20CDA62D27E12000415B34 /* PollChartView.swift in Sources */,
 				4DBC1EB62D26744D00CF2849 /* HomeView.swift in Sources */,
 				4DBC1E4E2D22DE1C00CF2849 /* QuickPickApp.swift in Sources */,
 			);
