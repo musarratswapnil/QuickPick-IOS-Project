@@ -10,7 +10,8 @@ class HomeViewModel {
     var error: String? = nil
     var newPollName: String = ""
     var newOptionName: String = ""
-    var newPollOptions: String = ""
+    var newPollOptions: [String] = []
+
         
     var isLoading: Bool = false // Tracks loading state
     var isCreateNewPollButtonDisabled: Bool {
@@ -22,9 +23,9 @@ class HomeViewModel {
         var isAddOptionsButtonDisabled: Bool {
             isLoading ||
             newOptionName.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty ||
-            newPollOptions.count >= 4
+            newPollOptions.count == 4
         }
-    
+        
     var errorMessage: String? // Stores error messages
 
     @MainActor
@@ -67,5 +68,53 @@ class HomeViewModel {
                 }
             }
     }
+    
+    @MainActor
+    func createNewPoll() async {
+        isLoading = true
+        defer { isLoading = false }
+        
+        guard !newPollName.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty else {
+            error = "Poll name cannot be empty"
+            return
+        }
+        
+        guard newPollOptions.count >= 2 else {
+            error = "You must have at least 2 options"
+            return
+        }
+
+        let poll = Poll(
+            name: newPollName.trimmingCharacters(in: .whitespacesAndNewlines),
+            totalCount: 0,
+            options: newPollOptions.map { Option(count: 0, name: $0) }
+        )
+        
+        do {
+            try await db.document("polls/\(poll.id)").setData(from: poll)
+            newPollName = ""
+            newPollOptions = []
+            error = nil
+        } catch {
+            self.error = "Failed to create poll: \(error.localizedDescription)"
+            print("Firestore error: \(error)")
+        }
+    }
+
+    func addOption() {
+        let trimmedName = newOptionName.trimmingCharacters(in: .whitespacesAndNewlines)
+        guard !trimmedName.isEmpty else {
+            error = "Option name cannot be empty"
+            return
+        }
+        guard newPollOptions.count < 4 else {
+            error = "You can only add up to 4 options"
+            return
+        }
+        self.newPollOptions.append(trimmedName)
+        self.newOptionName = ""
+    }
+
+    
 }
 

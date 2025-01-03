@@ -11,6 +11,11 @@ struct HomeView: View {
             createPollsSection
             addOptionsSection
         }
+        .alert("Error", isPresented: .constant(vm.error != nil)) {
+            
+        } message: {
+            Text(vm.error ?? "an error occured")
+        }
         .navigationTitle("LivePolls")
         .onAppear {
             vm.listenToLivePolls()
@@ -49,7 +54,7 @@ struct HomeView: View {
                     .textInputAutocapitalization(.never)
                 
                 Button("Submit") {
-                    // Submit action
+                    Task{ await vm.createNewPoll() }
                 }
                 .disabled(vm.isCreateNewPollButtonDisabled)
                 
@@ -63,12 +68,32 @@ struct HomeView: View {
             }
         }
     
-    var addOptionsSection: some View{
-        Section{
+    var addOptionsSection: some View {
+        Section("Options") {
+            TextField("Enter option name", text: $vm.newOptionName)
+                .autocorrectionDisabled()
+                .textInputAutocapitalization(.never)
             
+            Button("+ Add Option") {
+                vm.addOption()
+            }
+            .disabled(vm.isAddOptionsButtonDisabled)
+
+            
+            ForEach(vm.newPollOptions) { option in
+                Text(option)
+            }
+            .onDelete { indexSet in
+                vm.newPollOptions.remove(atOffsets: indexSet)
+            }
         }
     }
     
+    
+}
+
+extension String: Identifiable {
+    public var id: Self { self }
 }
 
 #Preview {
