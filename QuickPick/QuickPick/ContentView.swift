@@ -14,13 +14,7 @@ struct ContentView: View {
         NavigationView {
             VStack {
                 if isLoggedIn {
-                    WelcomeView(
-                        isLoggedIn: $isLoggedIn,
-                        email: $email,
-                        password: $password,
-                        username: $username,
-                        confirmPassword: $confirmPassword
-                    )
+                    HomeView()
                 } else {
                     if isSignUp {
                         SignUpView(
@@ -42,10 +36,14 @@ struct ContentView: View {
                 }
             }
             .onAppear {
-                if Auth.auth().currentUser != nil {
-                    isLoggedIn = true
+                do {
+                    try Auth.auth().signOut()
+                    isLoggedIn = false
+                } catch {
+                    print("Failed to log out: \(error.localizedDescription)")
                 }
             }
+
             .navigationBarHidden(true)
         }
     }
@@ -303,32 +301,22 @@ struct CustomTextField: View {
 
     var body: some View {
         HStack {
-            TextField("", text: $text)
+            TextField(placeholder, text: $text)
                 .autocapitalization(.none)
-                .disableAutocorrection(true) 
+                .disableAutocorrection(true)
                 .foregroundColor(.white)
 
-//             Image(systemName: "envelope")
-//                 .foregroundColor(.white)
+            // Optionally, you can add an icon or additional action here.
         }
         .padding(.horizontal)
         .frame(height: 40)
         .overlay(
-            Rectangle()
-                .frame(height: 1)
-                .foregroundColor(.white),
-            alignment: .bottom
-        )
-        .background(
-            Text(placeholder)
-                .foregroundColor(.white.opacity(0.6))
-                .bold()
-                .padding(.leading, 5)
-                .opacity(text.isEmpty ? 1 : 0),
-            alignment: .leading
+            RoundedRectangle(cornerRadius: 5)
+                .stroke(Color.white, lineWidth: 1)
         )
     }
 }
+
 
 
 struct CustomSecureField: View {
@@ -339,11 +327,12 @@ struct CustomSecureField: View {
     var body: some View {
         HStack {
             if isSecure {
-                SecureField("", text: $text)                     .autocapitalization(.none)
+                SecureField(placeholder, text: $text)
+                    .autocapitalization(.none)
                     .disableAutocorrection(true)
                     .foregroundColor(.white)
             } else {
-                TextField("", text: $text)
+                TextField(placeholder, text: $text)
                     .autocapitalization(.none)
                     .disableAutocorrection(true)
                     .foregroundColor(.white)
@@ -356,22 +345,14 @@ struct CustomSecureField: View {
         }
         .padding(.horizontal)
         .frame(height: 40)
+        .background(Color.clear)
         .overlay(
-            Rectangle()
-                .frame(height: 1)
-                .foregroundColor(.white),
-            alignment: .bottom
-        )
-        .background(
-            Text(placeholder)
-                .foregroundColor(.white.opacity(0.6))
-                .bold()
-                .padding(.leading, 5)
-                .opacity(text.isEmpty ? 1 : 0),
-            alignment: .leading
+            RoundedRectangle(cornerRadius: 5)
+                .stroke(Color.white, lineWidth: 1)
         )
     }
 }
+
 
 
 

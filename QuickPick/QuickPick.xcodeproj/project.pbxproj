@@ -38,6 +38,10 @@
 		4DBC1EAA2D2427DF00CF2849 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 4DBC1EA92D2427DF00CF2849 /* FirebaseStorage */; };
 		4DBC1EAC2D2427DF00CF2849 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 4DBC1EAB2D2427DF00CF2849 /* FirebaseStorageCombine-Community */; };
 		4DBC1EAE2D2427DF00CF2849 /* FirebaseVertexAI in Frameworks */ = {isa = PBXBuildFile; productRef = 4DBC1EAD2D2427DF00CF2849 /* FirebaseVertexAI */; };
+		4DBC1EB12D266EE300CF2849 /* Option.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBC1EB02D266EE300CF2849 /* Option.swift */; };
+		4DBC1EB32D266F5000CF2849 /* Poll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBC1EB22D266F5000CF2849 /* Poll.swift */; };
+		4DBC1EB62D26744D00CF2849 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBC1EB52D26744D00CF2849 /* HomeView.swift */; };
+		4DBC1EB92D2676D900CF2849 /* HomeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBC1EB82D2676D900CF2849 /* HomeVM.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +61,19 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		4DBC1EFF2D26FB6900CF2849 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		4DBC1E4A2D22DE1C00CF2849 /* QuickPick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickPick.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DBC1E4D2D22DE1C00CF2849 /* QuickPickApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickPickApp.swift; sourceTree = "<group>"; };
@@ -69,6 +86,12 @@
 		4DBC1E682D22DE1E00CF2849 /* QuickPickUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickPickUITests.swift; sourceTree = "<group>"; };
 		4DBC1E6A2D22DE1E00CF2849 /* QuickPickUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickPickUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		4DBC1E7D2D24251900CF2849 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4DBC1EB02D266EE300CF2849 /* Option.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Option.swift; sourceTree = "<group>"; };
+		4DBC1EB22D266F5000CF2849 /* Poll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Poll.swift; sourceTree = "<group>"; };
+		4DBC1EB52D26744D00CF2849 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		4DBC1EB82D2676D900CF2849 /* HomeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVM.swift; sourceTree = "<group>"; };
+		4DBC1EEB2D26FB6600CF2849 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		4DBC1EED2D26FB6700CF2849 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +148,7 @@
 				4DBC1E4C2D22DE1C00CF2849 /* QuickPick */,
 				4DBC1E5D2D22DE1E00CF2849 /* QuickPickTests */,
 				4DBC1E672D22DE1E00CF2849 /* QuickPickUITests */,
+				4DBC1EEA2D26FB6600CF2849 /* Frameworks */,
 				4DBC1E4B2D22DE1C00CF2849 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -142,6 +166,9 @@
 		4DBC1E4C2D22DE1C00CF2849 /* QuickPick */ = {
 			isa = PBXGroup;
 			children = (
+				4DBC1EB72D2676C100CF2849 /* Observables */,
+				4DBC1EB42D26743400CF2849 /* Views */,
+				4DBC1EAF2D266EBE00CF2849 /* Models */,
 				4DBC1E4D2D22DE1C00CF2849 /* QuickPickApp.swift */,
 				4DBC1E4F2D22DE1C00CF2849 /* ContentView.swift */,
 				4DBC1E512D22DE1E00CF2849 /* Assets.xcassets */,
@@ -176,6 +203,40 @@
 			path = QuickPickUITests;
 			sourceTree = "<group>";
 		};
+		4DBC1EAF2D266EBE00CF2849 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4DBC1EB02D266EE300CF2849 /* Option.swift */,
+				4DBC1EB22D266F5000CF2849 /* Poll.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4DBC1EB42D26743400CF2849 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4DBC1EB52D26744D00CF2849 /* HomeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4DBC1EB72D2676C100CF2849 /* Observables */ = {
+			isa = PBXGroup;
+			children = (
+				4DBC1EB82D2676D900CF2849 /* HomeVM.swift */,
+			);
+			path = Observables;
+			sourceTree = "<group>";
+		};
+		4DBC1EEA2D26FB6600CF2849 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4DBC1EEB2D26FB6600CF2849 /* WidgetKit.framework */,
+				4DBC1EED2D26FB6700CF2849 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -186,6 +247,7 @@
 				4DBC1E462D22DE1C00CF2849 /* Sources */,
 				4DBC1E472D22DE1C00CF2849 /* Frameworks */,
 				4DBC1E482D22DE1C00CF2849 /* Resources */,
+				4DBC1EFF2D26FB6900CF2849 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
@@ -335,7 +397,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DBC1EB32D266F5000CF2849 /* Poll.swift in Sources */,
 				4DBC1E502D22DE1C00CF2849 /* ContentView.swift in Sources */,
+				4DBC1EB12D266EE300CF2849 /* Option.swift in Sources */,
+				4DBC1EB92D2676D900CF2849 /* HomeVM.swift in Sources */,
+				4DBC1EB62D26744D00CF2849 /* HomeView.swift in Sources */,
 				4DBC1E4E2D22DE1C00CF2849 /* QuickPickApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
