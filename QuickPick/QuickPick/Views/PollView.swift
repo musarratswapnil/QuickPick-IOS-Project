@@ -46,7 +46,7 @@ struct PollView: View {
                 }
                 
                 Section("Vote") {
-                    ForEach(options) { option in
+                    ForEach(vm.poll?.options ?? []) { option in
                         Button(action: {
                             vm.incrementOption(option)
                         }, label: {
@@ -59,6 +59,7 @@ struct PollView: View {
                         })
                     }
                 }
+
             }
         }
         .navigationTitle(vm.poll?.name ?? "")
