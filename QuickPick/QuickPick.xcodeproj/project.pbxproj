@@ -23,10 +23,12 @@
 		4D20CDCC2D283C6E00415B34 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 4D20CDCB2D283C6E00415B34 /* FirebaseFirestore */; };
 		4D20CDCE2D283CE000415B34 /* FirebaseFirestoreCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 4D20CDCD2D283CE000415B34 /* FirebaseFirestoreCombine-Community */; };
 		4D20CDD22D283FE800415B34 /* PollChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D20CDA52D27E12000415B34 /* PollChartView.swift */; };
-		4D20CDD32D2994E300415B34 /* LivePollsWidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D20CDB92D283AFE00415B34 /* LivePollsWidgetLiveActivity.swift */; };
 		4D20CDD52D29952800415B34 /* LivePollsWidgetAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D20CDC62D283BE300415B34 /* LivePollsWidgetAttributes.swift */; };
 		4D20CDD72D29990B00415B34 /* UserVote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D20CDD62D29990A00415B34 /* UserVote.swift */; };
 		4D20CDD82D29990B00415B34 /* UserVote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D20CDD62D29990A00415B34 /* UserVote.swift */; };
+		4D6056372D3169E000C07B4D /* reviews.json in Resources */ = {isa = PBXBuildFile; fileRef = 4D6056362D3169DF00C07B4D /* reviews.json */; };
+		4D6056392D316A5A00C07B4D /* ReviewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6056382D316A5A00C07B4D /* ReviewsView.swift */; };
+		4D60563A2D316AA200C07B4D /* reviews.json in Resources */ = {isa = PBXBuildFile; fileRef = 4D6056362D3169DF00C07B4D /* reviews.json */; };
 		4DBC1E4E2D22DE1C00CF2849 /* QuickPickApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBC1E4D2D22DE1C00CF2849 /* QuickPickApp.swift */; };
 		4DBC1E502D22DE1C00CF2849 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBC1E4F2D22DE1C00CF2849 /* ContentView.swift */; };
 		4DBC1E522D22DE1E00CF2849 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DBC1E512D22DE1E00CF2849 /* Assets.xcassets */; };
@@ -114,6 +116,8 @@
 		4D20CDC62D283BE300415B34 /* LivePollsWidgetAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivePollsWidgetAttributes.swift; sourceTree = "<group>"; };
 		4D20CDCF2D283EE300415B34 /* QuickPick.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = QuickPick.entitlements; sourceTree = "<group>"; };
 		4D20CDD62D29990A00415B34 /* UserVote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserVote.swift; sourceTree = "<group>"; };
+		4D6056362D3169DF00C07B4D /* reviews.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = reviews.json; sourceTree = "<group>"; };
+		4D6056382D316A5A00C07B4D /* ReviewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsView.swift; sourceTree = "<group>"; };
 		4DBC1E4A2D22DE1C00CF2849 /* QuickPick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickPick.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DBC1E4D2D22DE1C00CF2849 /* QuickPickApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickPickApp.swift; sourceTree = "<group>"; };
 		4DBC1E4F2D22DE1C00CF2849 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -237,6 +241,7 @@
 				4DBC1E4F2D22DE1C00CF2849 /* ContentView.swift */,
 				4D20CDA32D27A81B00415B34 /* GoogleService-Info.plist */,
 				4DBC1E512D22DE1E00CF2849 /* Assets.xcassets */,
+				4D6056362D3169DF00C07B4D /* reviews.json */,
 				4DBC1E532D22DE1E00CF2849 /* Preview Content */,
 			);
 			path = QuickPick;
@@ -283,6 +288,7 @@
 				4DBC1EB52D26744D00CF2849 /* HomeView.swift */,
 				4D20CDA52D27E12000415B34 /* PollChartView.swift */,
 				4D20CDA72D2808AD00415B34 /* PollView.swift */,
+				4D6056382D316A5A00C07B4D /* ReviewsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -464,6 +470,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D60563A2D316AA200C07B4D /* reviews.json in Resources */,
 				4D20CDBE2D283AFF00415B34 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -473,6 +480,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4DBC1E552D22DE1E00CF2849 /* Preview Assets.xcassets in Resources */,
+				4D6056372D3169E000C07B4D /* reviews.json in Resources */,
 				4DBC1E522D22DE1E00CF2849 /* Assets.xcassets in Resources */,
 				4D20CDA42D27A81B00415B34 /* GoogleService-Info.plist in Resources */,
 			);
@@ -517,8 +525,8 @@
 				4DBC1E502D22DE1C00CF2849 /* ContentView.swift in Sources */,
 				4D20CDAA2D2808CA00415B34 /* PollVM.swift in Sources */,
 				4DBC1EB12D266EE300CF2849 /* Option.swift in Sources */,
+				4D6056392D316A5A00C07B4D /* ReviewsView.swift in Sources */,
 				4D20CDA82D2808AD00415B34 /* PollView.swift in Sources */,
-				4D20CDD32D2994E300415B34 /* LivePollsWidgetLiveActivity.swift in Sources */,
 				4D20CDD72D29990B00415B34 /* UserVote.swift in Sources */,
 				4DBC1EB92D2676D900CF2849 /* HomeVM.swift in Sources */,
 				4D20CDA62D27E12000415B34 /* PollChartView.swift in Sources */,

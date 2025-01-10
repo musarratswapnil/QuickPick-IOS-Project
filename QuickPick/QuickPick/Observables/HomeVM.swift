@@ -39,8 +39,8 @@ class HomeViewModel {
     @MainActor
     func listenToLivePolls() {
         db.collection("polls")
-            .order(by: "updatedAt", descending: true)
-            .limit(toLast: 10)
+            .order(by: "createdAt", descending: true)
+            .limit(to: 10)
             .addSnapshotListener { snapshot, error in
                 guard let snapshot else {
                     print("Error fetching snapshot: \(error?.localizedDescription ?? "error")")
@@ -93,3 +93,5 @@ class HomeViewModel {
     }
     
 }
+
+
