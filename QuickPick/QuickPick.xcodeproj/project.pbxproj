@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D1ED27C2D389CA80056421D /* LatestLivePollsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1ED27B2D389CA80056421D /* LatestLivePollsView.swift */; };
+		4D1ED27E2D38A1520056421D /* JoinPollsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1ED27D2D38A1520056421D /* JoinPollsView.swift */; };
 		4D20CDA42D27A81B00415B34 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4D20CDA32D27A81B00415B34 /* GoogleService-Info.plist */; };
 		4D20CDA62D27E12000415B34 /* PollChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D20CDA52D27E12000415B34 /* PollChartView.swift */; };
 		4D20CDA82D2808AD00415B34 /* PollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D20CDA72D2808AD00415B34 /* PollView.swift */; };
@@ -29,6 +31,15 @@
 		4D6056372D3169E000C07B4D /* reviews.json in Resources */ = {isa = PBXBuildFile; fileRef = 4D6056362D3169DF00C07B4D /* reviews.json */; };
 		4D6056392D316A5A00C07B4D /* ReviewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6056382D316A5A00C07B4D /* ReviewsView.swift */; };
 		4D60563A2D316AA200C07B4D /* reviews.json in Resources */ = {isa = PBXBuildFile; fileRef = 4D6056362D3169DF00C07B4D /* reviews.json */; };
+		4DB862582D375C1A00008079 /* TextSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB862572D375C1A00008079 /* TextSettingsView.swift */; };
+		4DB8625A2D375F3D00008079 /* TextStyleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB862592D375F3D00008079 /* TextStyleModifier.swift */; };
+		4DB8625C2D37616200008079 /* TextSettingsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB8625B2D37616200008079 /* TextSettingsProtocol.swift */; };
+		4DB8625E2D3811C700008079 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB8625D2D3811C700008079 /* LoginView.swift */; };
+		4DB862602D3812DB00008079 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB8625F2D3812DB00008079 /* SignUpView.swift */; };
+		4DB862622D38330D00008079 /* PollCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB862612D38330D00008079 /* PollCard.swift */; };
+		4DB862642D383B1C00008079 /* CreatePollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB862632D383B1C00008079 /* CreatePollView.swift */; };
+		4DB862662D383CAC00008079 /* AllPolls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB862652D383CAC00008079 /* AllPolls.swift */; };
+		4DB8626A2D38405200008079 /* TrendingPollsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB862692D38405200008079 /* TrendingPollsView.swift */; };
 		4DBC1E4E2D22DE1C00CF2849 /* QuickPickApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBC1E4D2D22DE1C00CF2849 /* QuickPickApp.swift */; };
 		4DBC1E502D22DE1C00CF2849 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBC1E4F2D22DE1C00CF2849 /* ContentView.swift */; };
 		4DBC1E522D22DE1E00CF2849 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DBC1E512D22DE1E00CF2849 /* Assets.xcassets */; };
@@ -104,6 +115,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4D1ED27B2D389CA80056421D /* LatestLivePollsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatestLivePollsView.swift; sourceTree = "<group>"; };
+		4D1ED27D2D38A1520056421D /* JoinPollsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinPollsView.swift; sourceTree = "<group>"; };
 		4D20CDA32D27A81B00415B34 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4D20CDA52D27E12000415B34 /* PollChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollChartView.swift; sourceTree = "<group>"; };
 		4D20CDA72D2808AD00415B34 /* PollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollView.swift; sourceTree = "<group>"; };
@@ -118,6 +131,15 @@
 		4D20CDD62D29990A00415B34 /* UserVote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserVote.swift; sourceTree = "<group>"; };
 		4D6056362D3169DF00C07B4D /* reviews.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = reviews.json; sourceTree = "<group>"; };
 		4D6056382D316A5A00C07B4D /* ReviewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsView.swift; sourceTree = "<group>"; };
+		4DB862572D375C1A00008079 /* TextSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextSettingsView.swift; sourceTree = "<group>"; };
+		4DB862592D375F3D00008079 /* TextStyleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextStyleModifier.swift; sourceTree = "<group>"; };
+		4DB8625B2D37616200008079 /* TextSettingsProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextSettingsProtocol.swift; sourceTree = "<group>"; };
+		4DB8625D2D3811C700008079 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		4DB8625F2D3812DB00008079 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		4DB862612D38330D00008079 /* PollCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollCard.swift; sourceTree = "<group>"; };
+		4DB862632D383B1C00008079 /* CreatePollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePollView.swift; sourceTree = "<group>"; };
+		4DB862652D383CAC00008079 /* AllPolls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllPolls.swift; sourceTree = "<group>"; };
+		4DB862692D38405200008079 /* TrendingPollsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingPollsView.swift; sourceTree = "<group>"; };
 		4DBC1E4A2D22DE1C00CF2849 /* QuickPick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickPick.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DBC1E4D2D22DE1C00CF2849 /* QuickPickApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickPickApp.swift; sourceTree = "<group>"; };
 		4DBC1E4F2D22DE1C00CF2849 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -238,11 +260,12 @@
 				4DBC1EB42D26743400CF2849 /* Views */,
 				4DBC1EAF2D266EBE00CF2849 /* Models */,
 				4DBC1E4D2D22DE1C00CF2849 /* QuickPickApp.swift */,
-				4DBC1E4F2D22DE1C00CF2849 /* ContentView.swift */,
 				4D20CDA32D27A81B00415B34 /* GoogleService-Info.plist */,
 				4DBC1E512D22DE1E00CF2849 /* Assets.xcassets */,
 				4D6056362D3169DF00C07B4D /* reviews.json */,
 				4DBC1E532D22DE1E00CF2849 /* Preview Content */,
+				4DB862592D375F3D00008079 /* TextStyleModifier.swift */,
+				4DB8625B2D37616200008079 /* TextSettingsProtocol.swift */,
 			);
 			path = QuickPick;
 			sourceTree = "<group>";
@@ -285,10 +308,20 @@
 		4DBC1EB42D26743400CF2849 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4DBC1E4F2D22DE1C00CF2849 /* ContentView.swift */,
 				4DBC1EB52D26744D00CF2849 /* HomeView.swift */,
 				4D20CDA52D27E12000415B34 /* PollChartView.swift */,
 				4D20CDA72D2808AD00415B34 /* PollView.swift */,
 				4D6056382D316A5A00C07B4D /* ReviewsView.swift */,
+				4DB862572D375C1A00008079 /* TextSettingsView.swift */,
+				4DB8625D2D3811C700008079 /* LoginView.swift */,
+				4DB8625F2D3812DB00008079 /* SignUpView.swift */,
+				4DB862612D38330D00008079 /* PollCard.swift */,
+				4DB862632D383B1C00008079 /* CreatePollView.swift */,
+				4DB862652D383CAC00008079 /* AllPolls.swift */,
+				4DB862692D38405200008079 /* TrendingPollsView.swift */,
+				4D1ED27B2D389CA80056421D /* LatestLivePollsView.swift */,
+				4D1ED27D2D38A1520056421D /* JoinPollsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -521,17 +554,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DB862662D383CAC00008079 /* AllPolls.swift in Sources */,
 				4DBC1EB32D266F5000CF2849 /* Poll.swift in Sources */,
 				4DBC1E502D22DE1C00CF2849 /* ContentView.swift in Sources */,
+				4DB862582D375C1A00008079 /* TextSettingsView.swift in Sources */,
 				4D20CDAA2D2808CA00415B34 /* PollVM.swift in Sources */,
+				4D1ED27E2D38A1520056421D /* JoinPollsView.swift in Sources */,
+				4DB862622D38330D00008079 /* PollCard.swift in Sources */,
 				4DBC1EB12D266EE300CF2849 /* Option.swift in Sources */,
+				4DB862602D3812DB00008079 /* SignUpView.swift in Sources */,
+				4DB8625C2D37616200008079 /* TextSettingsProtocol.swift in Sources */,
 				4D6056392D316A5A00C07B4D /* ReviewsView.swift in Sources */,
 				4D20CDA82D2808AD00415B34 /* PollView.swift in Sources */,
+				4DB862642D383B1C00008079 /* CreatePollView.swift in Sources */,
 				4D20CDD72D29990B00415B34 /* UserVote.swift in Sources */,
+				4DB8626A2D38405200008079 /* TrendingPollsView.swift in Sources */,
+				4DB8625A2D375F3D00008079 /* TextStyleModifier.swift in Sources */,
 				4DBC1EB92D2676D900CF2849 /* HomeVM.swift in Sources */,
 				4D20CDA62D27E12000415B34 /* PollChartView.swift in Sources */,
 				4DBC1EB62D26744D00CF2849 /* HomeView.swift in Sources */,
+				4D1ED27C2D389CA80056421D /* LatestLivePollsView.swift in Sources */,
 				4DBC1E4E2D22DE1C00CF2849 /* QuickPickApp.swift in Sources */,
+				4DB8625E2D3811C700008079 /* LoginView.swift in Sources */,
 				4D20CDD52D29952800415B34 /* LivePollsWidgetAttributes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
