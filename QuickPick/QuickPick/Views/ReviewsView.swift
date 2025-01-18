@@ -2,6 +2,7 @@ import Foundation
 import SwiftUI
 
 struct ReviewsView: View {
+    @Environment(\.dismiss) private var dismiss
     @State private var reviews: [Review] = []
     @State private var isLoading = true
 
@@ -25,6 +26,16 @@ struct ReviewsView: View {
                 }
             }
             .navigationBarTitle("Reviews", displayMode: .inline)
+            .toolbar {
+                ToolbarItem(placement: .navigationBarLeading) {
+                    Button(action: {
+                        dismiss()
+                    }) {
+                        Image(systemName: "chevron.left")
+                        Text("Back")
+                    }
+                }
+            }
             .onAppear {
                 fetchReviewsFromLocalJSON()
             }
